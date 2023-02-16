@@ -1,0 +1,95 @@
+
+.pricing-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* justify-items: center;
+    align-items: center; */
+    padding-top: 50px;
+}
+
+.pricing-list .price-list {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.pricing-list .price-list:nth-child(2) {
+    transform: scale(1.1);
+    margin: 0 20px;
+    background: var(--linear-gradient);
+}
+
+.pricing-list .price-list:nth-child(2) p,
+.pricing-list .price-list:nth-child(2) h2, 
+.pricing-list .price-list:nth-child(2) ul li,
+.pricing-list .price-list:nth-child(2) ul li:last-child {
+    color: var(--very-light-grayish-blue);
+    border-color: var(--very-light-grayish-blue);
+}
+
+.pricing-list .price-list:nth-child(2) button {
+    color: var(--grayish-blue);
+    background: var(--very-light-grayish-blue);
+    border-color: var(--very-light-grayish-blue);
+}
+
+
+.pricing-list .price-list p {
+    font-size: 16px;
+    color: var(--grayish-blue);
+    padding: 20px;
+}
+
+.pricing-list .price-list h2 {
+    font-size: 60px;
+    color: var(--dark-grayish-blue);
+    padding-bottom: 30px;
+}
+
+.pricing-list .price-list ul {
+    padding: 0;
+}
+
+.pricing-list .price-list ul li {
+    padding: 20px;
+    border-top: 1px solid var(--light-grayish-blue);
+    color: var(--grayish-blue);
+    font-size: 16px;
+}
+
+.pricing-list .price-list ul li:last-child {
+    border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+.pricing-list .price-list button {
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    margin: 30px 0;
+    background: var(--linear-gradient);
+    color: var(--very-light-grayish-blue);
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid var(--grayish-blue);
+    transition: .3s;
+}
+
+.pricing-list .price-list button:hover {
+    background: transparent;
+    color: var(--grayish-blue);
+    /* border: 1px solid var(--grayish-blue); */
+}
+
+.pricing-list .price-list:nth-child(2) button:hover {
+    background: transparent;
+    color: var(--very-light-grayish-blue);
+}
+
+@media (max-width: 768px) {
+    .pricing-list .price-list {
+        margin: 50px 0;
+        transform: scale(1);
+    }
+}

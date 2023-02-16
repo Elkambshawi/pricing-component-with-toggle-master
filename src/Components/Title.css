@@ -1,0 +1,68 @@
+
+.pricing-component {
+    margin-top: 100px;
+    position: relative;
+}
+/* 
+.pricing-component::after {
+    content: '';
+    position: absolute;
+    background-image: url(../assets/bg-top.svg);
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+} */
+
+.pricing-component h3 {
+    font-size: 40px;
+    color: var(--dark-grayish-blue);
+    margin: 30px;
+}
+
+.pricing-component .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.pricing-component .btn p {
+    color: var(--light-grayish-blue);
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+.pricing-component .btn #btnicon {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background: var(--linear-gradient);
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pricing-component .btn #btnicon:hover {
+    opacity: .6;
+}
+
+.pricing-component .btn #btnicon::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 2.3px;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translateX(2.5px);
+    transition: .5s;
+}
+
+.pricing-component .btn #btnicon.left::before {
+    transform: translateX(-27.5px);
+}
